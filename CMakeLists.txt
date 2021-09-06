@@ -7,9 +7,9 @@ file(STRINGS "configure.ac"
 string(REGEX REPLACE ${VERSION_REGEX} "\\1" VERSION_STRING "${VERSION_STRING}")
 
 project(libconfig LANGUAGES C CXX VERSION ${VERSION_STRING})
-option(BUILD_EXAMPLES "Enable examples" ON)
+option(BUILD_EXAMPLES "Enable examples" OFF)
 option(BUILD_SHARED_LIBS  "Enable shared library" ON)
-option(BUILD_TESTS "Enable tests" ON)
+option(BUILD_TESTS "Enable tests" OFF)
 
 set_property(GLOBAL	PROPERTY USE_FOLDERS ON)
 
